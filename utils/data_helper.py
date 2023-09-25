@@ -18,12 +18,10 @@ import configparser
 
 import jieba
 import jieba.analyse as analyse
-# import pymysql
+
 import re
-# import emoji
-import pandas as pd
 import numpy as np
-# from bert_serving.client import BertClient
+
 from utils.args import FLAGS
 from utils.logger_config import base_logger
 

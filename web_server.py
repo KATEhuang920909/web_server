@@ -7,15 +7,11 @@ import sys
 import requests
 import numpy as np
 from gensim.models.word2vec import Word2Vec
-from gensim.corpora.dictionary import Dictionary
-from keras.preprocessing import sequence
-import time
 import tornado.httpserver
 import yaml
 from keras.models import model_from_yaml
 np.random.seed(1337)  # For Reproducibility
 import sys
-# from main import lstm_predict
 import main
 sys.path.append("../")
 sys.path.append("../utils")
@@ -24,10 +20,7 @@ import tornado.ioloop
 import tornado.web
 import tornado.httpclient
 import json
-# from utils.filter_models.filter import Filter
-from utils.data_helper import base_logger, DataProcessors, get_config_values, get_option_values
-from utils.args import FLAGS
-
+from utils.data_helper import base_logger, DataProcessors
 # env_list = get_option_values("post_server")
 # if FLAGS.env not in env_list:
 #     raise Exception("请输入正确的环境（int/test/prd中的一种）")
